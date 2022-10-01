@@ -9,7 +9,7 @@
 * Create an issue with description and wait for approval.
 * Then fork this repository.
 * In the forked repository create a folder ,the folder name should be your full name.
-* Add your files to the folder, for example check [this]()
+* Add your files to the folder, for example check [this](https://github.com/Vinodk-17/Portfolio-Collector/tree/main/Vinod-Portfolio-Template)
 * Make pull request after adding the files.
 * Wait for review.
 
