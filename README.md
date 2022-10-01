@@ -14,5 +14,6 @@
 * Wait for review.
 
 Contact me here for any doubt - 
-https://www.instagram.com/vinodkuril_17/?hl=en
-https://www.linkedin.com/in/vinod-kuril-6398b5220/
+
+* https://www.instagram.com/vinodkuril_17/?hl=en
+* https://www.linkedin.com/in/vinod-kuril-6398b5220/
