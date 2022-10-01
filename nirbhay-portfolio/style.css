@@ -1,0 +1,506 @@
+:root {
+  --background: rgba(85, 214, 175, 0.95);
+  --body-color: rgb(125, 125, 125);
+  --light-color:rgb(240, 255, 255);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Fira Sans", sans-serif;
+}
+/*----------------------------navigation styles start here----------------------*/
+header {
+  background-color: var(--background);
+  position: fixed;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  text-align: center;
+  z-index: 900;
+  width: 100%;
+}
+.logo {
+  font-family:"Fira Sans Extra Condensed", sans-serif;
+  font-size: 3em;
+}
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-lable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-toggle-lable div {
+  width: 2em;
+  height: 1px;
+  margin: 0.2em;
+  border: 2px solid var(--light-color);
+  border-radius: 1px;
+  background-color: var(--light-color);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+nav a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+.logo_link{
+  color: black;
+  text-decoration: none;
+}
+
+/*--------------------- for body section-----------------------------------------*/
+.content {
+  background-color: var(--body-color);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+/*--------------------about section 2.0 design----------------------------------*/
+.about{
+  grid-column: 2/span 10;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5em 0.5em 0.5em 0.5em;
+  padding: 0.5em;
+  background:var(--light-color);
+  color:black;
+  text-align: center;
+  width:90%;
+  max-width: 850px;
+  box-shadow:0 0 30px rgba(0, 0, 0, 0.5) ;
+}
+
+.profile{
+  border: 3px solid black;
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+}
+.social_list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.5em;
+  margin: 0.5em auto;
+  padding:0px;
+  width: 150px;
+}
+
+.social_link{
+  color: black;
+}
+/*-----------hover effects for the social icons------------*/
+.fa-brands{
+  transition: ease-in-out 0.2s;
+}
+.fa-brands:hover{
+  transform: scale(1.2);
+}
+/*-----------hover effects for the social icons ends------------*/
+.about_main{
+  display: flex;
+  flex-direction: column;
+}
+.about_name{
+  margin: 0 0 0.2em 0;
+  font-size: 2.2em;
+  line-height: 1.2;
+  
+}
+.about_name::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 5em;
+  background-color: black;
+  opacity: 0.5;
+  margin: 0.3em auto;
+}
+.about_occupation{
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+.about_details{
+  opacity: 0.8;
+  font-size: 1.1em;
+}
+/*---------------------------skill section--------------------------------------*/
+.skills{
+  grid-column: 2/span 10;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  margin: 4em 0.5em 0.5em 0.5em;
+  padding:0.5em; 
+}
+.skilltitle{
+  grid-column: span 10;
+  justify-self: center;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* new style for skill icons */
+
+/*-----------hover effects for the skills icons------------*/
+.icon{
+  transition: ease-in-out 0.2s;
+}
+.icon:hover{
+  transform: scale(1.1);
+}
+/*-----------hover effects for the skills icons ends------------*/
+.cpp{
+  margin-top: 1em;
+  grid-column: 1/span 4;
+}
+.html{
+  margin-top: 1em;
+  grid-column: 1/span 4; 
+}
+.js{
+  margin-top: 1em;
+  grid-column: 1/span 4; 
+}
+.git{
+  margin-top: 1em;
+  grid-column: 1/span 4; 
+}
+.linux{
+  margin-top: 1em;
+  grid-column: 1/span 4; 
+}
+/* second column */
+.c{
+  margin-top: 1em;
+  grid-column: 7/span 4;
+  grid-row: 2;
+}
+.css{
+  margin-top: 1em;
+  grid-column: 7/span 4;
+  grid-row: 3;
+}
+.sql{
+  margin-top: 1em;
+  grid-column: 7/span 4;
+  grid-row: 4;
+}
+.vscode{
+  margin-top: 1em;
+  grid-column: 7/span 4;
+  grid-row: 5;
+}
+.icons{
+  margin:1em 0 1em 0;
+}
+/*-----------------------certificate section-------------------------------*/
+.certificate{
+  grid-column: 2/span 10;
+  grid-row: 3;
+}
+.certificatetitle{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.certi_title{
+  color: white;
+  text-align: center;
+}
+
+/*------------------------project section----------------------------------*/
+.projects{
+  margin-top: 4em;
+  grid-column: 2/span 10;
+}
+.project_heading{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+/*--cards for projects--*/
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  flex:1 0 300px;
+  padding: 0.5em;
+  margin: 0.5em;
+  overflow: hidden;
+  background: var(--light-color)  ;
+  max-width: 364px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;  /*----hover effects for the cards------*/
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.certi_card{
+  background: black; /* for the certificate background*/
+}
+.card_image{
+  flex:0 0 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:left;
+  border-radius: 10px;
+}
+.card_content{
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.5em;
+}
+.card_title{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom:0.5em;
+}
+.card_details{
+  font-size: 1em;
+  margin-bottom:0.5em;
+
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:var(--background);
+  border-radius: 10px;
+  text-decoration: none;
+  width: 150px;
+  margin-top: auto;
+  flex:0 0 40px;
+  color: black;
+}
+.certi_link{
+  width: auto;
+}
+.ltext{
+  font-size: 1.5em;
+ 
+}
+/*----------------------footer section---------------*/
+
+.footer_section{
+  grid-column: 2/span 10 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--body-color);
+  padding:5em 0 1em 0;
+  text-align: center;
+}
+.contact_info{
+  font-family:"Fira Sans Extra Condensed", sans-serif;
+  font-size: 1.5em;
+  margin: 0 1em 1em 1em;
+}
+hr{
+  max-width: 100%;
+}
+.self{
+  margin: 1em 0 0 0;
+}
+
+/* -----------------for larger screens------------*/
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-lable {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+  }
+  .logo {
+    text-align: left;
+    grid-column: 2 /3;
+  }
+  nav {
+    all: unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav li {
+    margin: 0em 0em 0em 3em;
+  }
+  nav a {
+    opacity: 1;
+    font-size: 1.3em;
+    position: relative;
+  }
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    top: -0.55em;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 1);
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+
+  /*------------nav bar ends here-------------*/
+
+  /*-------------About section starts here---------*/
+  .about{
+    flex-direction: row;
+    margin-top: 6em;
+    padding: 2.5em;
+  }
+  .profile{
+    max-width: 250px;
+    height: auto;
+  }
+  .social_list{
+    font-size: 2.5em;
+    width: 250px;
+  }
+  .about_main{
+    text-align: left;
+    margin-left: 2.5em;
+  }
+  .about_name::after{
+    margin-left: 0px;
+  }
+  /*-------About section ends-------------------*/
+  /*-------skill section starts here-------------------*/
+  .skilltitle{
+    grid-column: span 11;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+  }
+  /* .iconholder1{
+    margin-top: 1em;
+    grid-column: 1/span 4;
+  }
+  .iconholder2{
+    margin-top: 1em;
+    grid-column: 7/span 4;
+  } */
+/* first column */
+  .cpp{
+    margin-top: 1em;
+    grid-column: 1/span 3;
+  }
+  
+  .js{
+    margin-top: 1em;
+    grid-column: 1/span 3; 
+  }
+  
+  .linux{
+    margin-top: 1em;
+    grid-column: 1/span 3; 
+  }
+  /* second column */
+  .c{
+    margin-top: 1em;
+    grid-column: 5/span 3;
+    grid-row: 2;
+  }
+  .css{
+    margin-top: 1em;
+    grid-column: 5/span 3;
+    grid-row: 3;
+  }
+  .sql{
+    margin-top: 1em;
+    grid-column: 5/span 3;
+    grid-row: 4;
+  }
+  
+  /* third column */
+  .html{
+    margin-top: 1em;
+    grid-column: 9/span 3; 
+  }
+  .git{
+    margin-top: 1em;
+    grid-column: 9/span 3; 
+  }
+  .vscode{
+    margin-top: 1em;
+    grid-column: 9/span 3;
+    grid-row: 4;
+  }
+ /*skils section end*/
+  .project_heading{
+    font-size: 3em;
+  }
+  .contact_info{
+    font-size: 3em;
+  }
+  .self{
+    font-size: 1.5em;
+  }
+
+}
