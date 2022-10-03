@@ -39,7 +39,6 @@
   <img src="https://contrib.rocks/image?repo=Vinodk-17/Portfolio-Collector" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
 
 
 Contact me here for any doubt - 
