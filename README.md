@@ -31,6 +31,7 @@
 * In the forked repository create a folder ,the folder name should be your full name.
 * Add your files to the folder, for example check [this](https://github.com/Vinodk-17/Portfolio-Collector/tree/main/Vinod-Portfolio-Template)
 * Make pull request after adding the files.
+* Make sure you have entered your name in contributor folder as mentioned (It's your responsibility)
 * Wait for review.
 
 ## Contributors:
