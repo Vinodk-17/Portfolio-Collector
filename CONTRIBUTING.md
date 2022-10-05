@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-Welcome to the world of open-source! It is really **awesome** to have you here. Before start contributing with this project make sure you read our [Code Of Conduct](), it is really important to make this inclusive and open to everyone
+Welcome to the world of open-source! It is really **awesome** to have you here. Before start contributing with this project make sure you read our [Code Of Conduct](https://github.com/Vinodk-17/Portfolio-Collector/blob/main/CODE_OF_CONDUCT.md), it is really important to make this inclusive and open to everyone
 
 ## Looking to make your first PR?
 
