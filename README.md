@@ -34,6 +34,22 @@
 * Make sure you have entered your name in contributor folder as mentioned (It's your responsibility)
 * Wait for review.
 
+# ❄Format to add name in contributor folder
+
+* Create a file 
+* file name = yourname.json (yourname = put your name)
+* Then put your github username in your file
+
+* for [example](https://github.com/Vinodk-17/Portfolio-Collector/tree/main/contributors) 
+
+## format
+<pre> {
+  "github-username": "shashankrai2001"
+ }
+
+</pre>
+
+
 ## Contributors:
 
 <a href="https://github.com/Vinodk-17/Portfolio-Collector/graphs/contributors">
