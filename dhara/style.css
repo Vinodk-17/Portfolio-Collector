@@ -1,0 +1,421 @@
+
+
+body{
+
+    background-color: #34568B;
+
+    background:url("mybg.png");
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: 100% 100%;
+
+
+}
+
+.maincard{
+
+    width:97%;
+   
+
+    background-color: white;
+
+    margin:auto;
+
+    border-radius: 20px;;
+
+    box-shadow: 2px 2px 5px 5px #F7CAC9;
+
+    height:auto;
+ 
+
+}
+
+h2{
+
+    text-align: center;
+
+    padding-top:20px;
+
+    color:darkblue;
+
+    font-size:30px;
+
+    font-weight: 1000;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-transform: uppercase;
+
+    text-shadow: 2px 2px white;
+
+}
+
+.roundbox{
+
+    width:100px;
+
+    height:100px;
+
+    background-color: whitesmoke;
+
+    margin:auto;
+
+    margin-top:7px;
+
+    border-radius: 50px;;
+
+}
+
+#part{
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height:auto;
+
+    overflow: hidden;
+
+    margin-top:20px;
+
+    padding:0px 20px;
+
+}
+
+.partone{
+
+
+
+width:30% ;
+
+margin:0px 20px;
+
+height:250px;
+
+
+
+background-color: rebeccapurple;
+
+border:5px solid black;
+
+
+
+border-radius: 20px;;
+
+
+
+}
+
+
+.parttwo{
+
+
+width:30% ;
+
+height:250px;
+
+margin:0px 20px;
+
+
+background-color: rebeccapurple;
+
+border:5px solid black;
+
+border-radius: 20px;;
+
+}
+
+.partthree{
+
+margin:0px 10px;
+
+width:30% ;
+
+height:250px;
+
+background-color: rebeccapurple;
+
+border:5px solid black;
+
+border-radius: 20px;;
+
+}
+
+
+
+.fas{
+    font-size: 60px;;
+
+    color:#955251;
+
+    margin-left:15px;
+
+    margin-top:20px;
+
+}
+
+.fab{
+    font-size: 60px;;
+
+    color:#955251;
+
+    margin-left:20px;
+
+    margin-top:20px;
+
+
+
+}
+
+.far{
+    font-size: 60px;;
+
+    color:#955251;
+
+    margin-left:20px;
+
+    margin-top:20px;
+
+}
+
+
+#boxtwo{
+
+ width:97%;
+
+
+ margin:auto;
+
+ height:30px;
+
+ background-color:#F7CAC9 ;
+
+ margin-top:90px;
+
+ border-radius: 20px;;
+
+ cursor: pointer;
+
+ transition: 0.5s;
+
+}
+
+#boxtwo:hover{
+
+ width:97%;
+ 
+
+ height:30px;
+
+ background-color:#FFFF00 ;
+ 
+
+ border-radius: 20px;;
+
+ cursor: pointer;
+
+
+}
+
+#space-shuttle:hover{
+
+ transition: 0.4s;
+
+ position: absolute;
+
+ animation: rotate 2s ease-in 0s 1;
+}
+
+@keyframes rotate{
+
+from{
+         transform:rotate(0deg);
+}
+
+to{
+
+    transform:rotateY(350deg);
+
+}
+}
+
+
+h3{
+text-align: center;
+
+text-transform: uppercase;
+
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+letter-spacing: 2px;
+
+transition: 0.4s;
+
+}
+
+h3:hover{
+
+letter-spacing: 5px;
+
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+h3:hover{
+
+letter-spacing: 0px;
+
+}
+
+#boxtwo{
+
+margin-top:40px;
+
+}
+
+.maincard{
+
+width:97%;
+
+
+height:auto;
+
+
+}
+
+#part{
+
+display: block;
+
+height:auto;
+
+}
+
+.partone{
+
+display: block;
+
+width:95%;
+
+height:200px;
+
+margin:auto;
+
+
+margin-top:30px;
+
+background-color: rebeccapurple;
+
+}
+.parttwo{
+
+margin:10px 0px;
+
+width:95% ;
+
+margin:auto;
+
+height:200px;
+
+margin-top:30px;
+
+background-color: rebeccapurple;
+
+}
+.partthree{
+
+margin:10px 0px;
+
+width:95% ;
+
+height:200px;
+
+margin:auto;
+
+margin-top:30px;
+
+
+
+}
+
+}
+
+.mysocialmedia{
+
+
+height:30px;
+
+
+
+margin-top:auto
+
+}
+
+#myfb{
+
+font-size: 30px;;
+
+    color:black;
+
+    margin-left:20px;
+
+    margin-top:-20px;
+
+}
+
+#myfb:hover{
+
+color:darkblue;
+
+cursor: pointer;
+
+}
+
+#myinsta{
+
+font-size: 30px;;
+
+    color:black;
+
+    margin-left:10px;
+
+    margin-top:-20px;
+
+}
+
+#myinsta:hover{
+
+color:cadetblue;
+
+cursor: pointer;
+
+}
+
+#mylinked{
+
+font-size: 30px;;
+
+    color:black;
+
+    margin-left:10px;
+
+    margin-top:-20px;
+
+}
+
+#mylinked:hover{
+
+color:blue;
+
+cursor: pointer;
+
+}
