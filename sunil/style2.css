@@ -1,0 +1,55 @@
+/* .comment{
+    border-radius: 1rem;
+    width:20rem;
+    height: 30rem;
+    background-color:black;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: arial;
+}
+
+.main {
+
+    margin: 2%;
+}
+
+.container1 .box-container1{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+  
+  .container1 .box-container1 .box{
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .8rem;
+    text-align: center;
+    padding:2rem;
+    flex:1 1 25rem;
+  }
+  
+  .container1 .box-container1 .box img{
+    width: 10rem;
+    margin:.5rem 0;
+  }
+  
+  .container1 .box-container1 .box h3{
+    font-size: 3.5rem;
+    color:var(--black);
+  }
+  
+  .container1 .box-container1 .box p{
+    font-size: 2rem;
+    color:#666;
+    padding:.5rem 0;
+  }
+  
+  .container1 .box-container1 .box .btn{
+    display: block;
+  }
