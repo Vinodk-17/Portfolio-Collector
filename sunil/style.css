@@ -160,12 +160,12 @@
   }
   .piggy{
     width:200px;
-    height:70%;
+    height:72%;
     
   }
   .tax{
     width:200%;
-    height:70%;
+    height:72%;
 
   }
   .text3{
@@ -205,12 +205,12 @@
   }
   
   .container1 .box-container1 .box img{
-    width: 10rem;
+    width: 10.2rem;
     margin:.5rem 0;
   }
   
   .container1 .box-container1 .box h3{
-    font-size: 3.5rem;
+    font-size: 3.6rem;
     color:var(--black);
   }
   
